@@ -2,7 +2,7 @@
 title: "Hello World"
 description: lalala~
 date: 2022-03-31T10:47:05+08:00
-image="Bowie.png"
+image: Bowie.png
 math:
 license:
 hidden: false
