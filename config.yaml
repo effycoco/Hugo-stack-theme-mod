@@ -1,5 +1,5 @@
-baseurl: https://example.com
-languageCode: en-us
+baseurl: https://record-everything.vercel.app
+languageCode: en-us, cn-zh
 theme: stack
 paginate: 5
 title: Record Everything
@@ -27,7 +27,7 @@ params:
     - post
   featuredImageField: image
   rssFullContent: true
-  favicon:
+  favicon: /favicon.png
 
   footer:
     since: 2020
