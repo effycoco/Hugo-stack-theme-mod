@@ -8,7 +8,7 @@ tags:
 image:
 math:
 license:
-hidden: false
+hidden: true
 comments: true
 draft: true
 ---
