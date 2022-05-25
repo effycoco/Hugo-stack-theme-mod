@@ -220,10 +220,13 @@ markup:
     ordered: true
     startLevel: 2
   highlight:
+    anchorLineNos: false
+    hl_Lines: ""
     noClasses: false
-    codeFences: false
-    guessSyntax: true
+    codeFences: true
+    guessSyntax: false
     lineNoStart: 1
     lineNos: true
     lineNumbersInTable: true
     tabWidth: 4
+    style: monokai
