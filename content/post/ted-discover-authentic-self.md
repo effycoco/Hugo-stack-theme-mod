@@ -1,6 +1,6 @@
 ---
 title: "How to Discover Your Authentic Self"
-description:
+description: 观看笔记
 date: 2022-06-17T22:33:41+08:00
 image:
 math:

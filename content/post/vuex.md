@@ -1,6 +1,6 @@
 ---
 title: "Vuex"
-description:
+description: 学习笔记
 date: 2022-06-17T23:14:47+08:00
 image:
 math:
@@ -16,7 +16,7 @@ tags:
 
 #
 
-[https://vuex.vuejs.org/guide/](https://vuex.vuejs.org/guide/#the-simplest-store)
+文档：[https://vuex.vuejs.org/guide/](https://vuex.vuejs.org/guide/#the-simplest-store)
 
 商店是全局可用，任何一个组件内都可访问。
 
@@ -55,7 +55,7 @@ app.use(store);
 
 在组件里通过方法直接更改 state 是可以做到的，但不符合 the Vuex philosophy, 不推荐。通过 mutation 更改的好处：不易出错；可追踪状态的变化；可读性更强；方便实现调试工具。另外，将更改状态的代码集中在一处，而不是分散在各组件的方法中，有利于后续维护。
 
-> Using store state in a component simply involves returning the state within a computed property, because the store state is reactive. Triggering changes simply means committing mutations in component methods. 由于 store 中的状态是响应式的，在组件中调用 store 中的状态简单到仅需要在计算属性中返回即可。触发变化也仅仅是在组件的 methods 中提交 mutation。
+> Using store state in a component simply involves <mark>returning the state within a computed property</mark>, because the store state is reactive. Triggering changes simply means <mark>committing mutations in component methods</mark>. 由于 store 中的状态是响应式的，在组件中调用 store 中的状态简单到仅需要在计算属性中返回即可。触发变化也仅仅是在组件的 methods 中提交 mutation。
 
 ```jsx
 // in Component.vue
