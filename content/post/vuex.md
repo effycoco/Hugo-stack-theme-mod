@@ -19,11 +19,9 @@ tags:
 材料：
 
 - 官方文档（中/英）：[https://vuex.vuejs.org/guide/](https://vuex.vuejs.org/guide/#the-simplest-store) （以下简称官网）
-- udemy 课第 15 节
+- [Udemy 课](https://www.udemy.com/course/vuejs-2-the-complete-guide/)第 15 节
 
 用法：先看视频标题，在官网中找到对应部分，读，读完或读到看不懂的部分后看视频。一个视频看完后再看下一个视频标题，读下一部分的对应文档……；这次没有一比一机械复刻视频里的代码，看懂了他这样设计是为了用到什么知识点后，我可以自己用不完全一致的方式写代码以用到这个知识点。
-
-评价：是篇合格的笔记，一开始只是想把在官网的高亮和批注整合在一起，只是复制粘贴，后来加入了自己的理解。这是我学这个课以来最透彻的一节，记笔记的功劳。
 
 # 小结
 
@@ -72,11 +70,11 @@ app.use(store);
 > Again, the reason we are committing a mutation instead of changing `store.state.count`
 >  directly, is because we want to explicitly track it. This simple convention makes your intention more explicit, so that you can reason about state changes in your app better when reading the code. In addition, this gives us the opportunity to implement tools that can log every mutation, take state snapshots, or even perform time travel debugging. 在 vuex 中，更改状态通过提交 mutation 的方式，而非直接改变  `store.state.count`，这样可以更明确地追踪到状态的变化。这个简单的约定能够让你的意图更加明显，这样你在阅读代码的时候能更容易理解为什么改变状态。此外，这样也让我们能利用那些能记录每次状态改变，保存状态快照的调试工具。甚至可以实现如时间穿梭般的调试体验。
 
-在组件里通过方法直接更改 state 是可以做到的，但不符合 the Vuex philosophy, 不推荐。通过 mutation 更改的好处：不易出错；可追踪状态的变化；可读性更强；方便实现调试工具。另外，将更改状态的代码集中在一处，而不是分散在各组件的方法中，有利于后续维护。
+在组件里通过方法 直接更改 state 是可以做到的，但不符合 the Vuex philosophy, 不推荐。通过 mutation 更改的好处：不易出错；可追踪状态的变化；可读性更强；方便实现调试工具。另外，将更改状态的代码集中在一处，而不是分散在各组件的方法中，有利于后续维护。
 
 ## 在组件中使用 state 和 mutation
 
-> Using store state in a component simply involves returning the state within a computed property, because the store state is reactive. Triggering changes simply means committing mutations in component methods. 由于 store 中的状态是响应式的，在组件中调用 store 中的状态简单到仅需要在计算属性中返回即可。触发变化也仅仅是在组件的 methods 中提交 mutation。
+> Using store state in a component simply involves <mark>returning the state within a computed property</mark>, because the store state is reactive. Triggering changes simply means <mark>committing mutations in component methods</mark>. 由于 store 中的状态是响应式的，在组件中调用 store 中的状态简单到仅需要在计算属性中返回即可。触发变化也仅仅是在组件的 methods 中提交 mutation。
 
 ```jsx
 // returning the state within a computed property
