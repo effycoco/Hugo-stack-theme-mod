@@ -42,7 +42,8 @@ var 定义的变量以函数为界，let 和 const 定义的变量以 block 为�
 ## 使用 `var` 定义 function-scoped 变量
 
 使用 `var`，变量定义在最近的函数或全局词法环境里面，而 block（如`loops`, `try-catch`, `switch`等）被忽略。 也就是说变量的作用域仅由函数决定，block 不起作用。只要是在同一函数里，在 block 外面可以访问到 block 里面用`var`定义的变量。
-Variables declared with the keyword `var` are always registered in the closest function or global lexical environment, without paying any attention to blocks. 即使是在 block 里面定义的`var`变量, 一开始就是在最近的函数词法环境里注册的，而非在 block 词法环境里。
+
+这是因为使用关键字 `var` 声明的变量始终是在最近的函数或全局词法环境中注册的，而不会注意 block。 即使是在 block 里面定义的`var`变量, 一开始就是在最近的函数词法环境里注册的，而非在 block 词法环境里。
 
 ## 使用 `let` 和 `const` 定义 block-scoped 变量
 
