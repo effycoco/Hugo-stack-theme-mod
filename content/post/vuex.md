@@ -1,5 +1,5 @@
 ---
-title: "Vuex"
+title: "Vuex入门"
 description: Udemy课程和官方文档学习笔记
 date: 2022-06-17T23:14:47+08:00
 image:
@@ -346,6 +346,24 @@ const store = createStore({
 ## Restructuring
 
 如果一开始把全部逻辑都写在了 main.js 里，现在要 restructrue，首先在 src 下面新建一个 store 文件夹，其中的 index.js 文件使用 createStore 并导出创建的 store，由 main.js 导入。若要将 store 进一步细分，比如将 module 提取出来，在 store 文件夹下创建 modules 文件夹，创建 module 同名的 js 文件，在该文件中创建 module 对象并导出。创建 store 时用的 actions, getters, mutations 也都可以存放在单独的文件里。
+
+# 作业 — 将 state 从组件迁移至 Vuex
+
+目标：要将 App.vue 内的 state 迁移到 vuex。
+
+先安装 vuex `npm install vuex@next --save` 。
+
+然后花点时间理解原代码，尤其是涉及 state 的部分（定义、改变、使用）。
+
+在 main.js 里写好 store 的框架（引入、创建、使用）。
+
+先从一个 state 开始迁移，把 App 中定义的某个 state 挪到`state(){return{}}`中，把改变该 state 的逻辑从 App 中的 methods 挪到 createStore 中的 mutations 中，mutation 接受 state 作为第一个参数，原方法中的`this`替换为`state`。
+
+（如果想使组件改变状态时多绕一步，还可以加上 actions。）
+
+在子组件中找到 inject 了该状态和改变该状态之方法的组件，用新增 computed 属性或 mapState 代替 state 的 inject，用新增 method 或 mapMutations 代替方法的 inject。从 App 组件的 provide 中移除该 state 和相关方法。
+
+然后遵循同样的步骤迁移其他 state 及其相关方法。
 
 # 学英语时间
 
