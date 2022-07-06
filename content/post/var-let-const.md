@@ -14,16 +14,17 @@ tags:
   - JavaScript
 ---
 
-# 参考资料
+# 参考
 
-_Secrets of the JavaScript Ninja_ Section 5.5
+- _Secrets of the JavaScript Ninja_ Section 5.5
+- [JavaScript 中的 Var、Let 和 Const 有什么区别](https://chinese.freecodecamp.org/news/javascript-var-let-and-const/)
 
 # 小结
 
 这三种定义变量的方式的区别体现在两方面：
 
 1. 可变性
-2. 与词法环境的关系
+2. 与词法环境的关系或者说作用域
 
 # 变量可变性
 
@@ -31,9 +32,11 @@ _Secrets of the JavaScript Ninja_ Section 5.5
 
 用 const 声明的变量必须得在定义时给它一个初始值，且后续不能再赋值。但如果初始值是对象类型，后续可修改增删其属性。比如对于 const 定义的 array，后续可更改其元素。即可对其已有的值进行修改，只是不能再次赋全新的值来覆盖旧值。
 
-用 var 和 let 声明的变量可以不给它初始值，也可以在后续赋值任意次。
+用 var 和 let 声明的变量可以不给它初始值，也可以在后续赋值任意次。但假如在声明时不初始化，var 变量自动拥有初始值 undefined，而 let 变量不具有初始值。
 
-# 所定义变量的关键字与词法环境的关系
+在其所属词法环境内，var 变量可以重新声明，let 变量不能重新声明
+
+# 所定义变量的关键字与词法环境的关系 / 变量作用域
 
 如果按与词法环境的关系（即其作用域 scope）分类，var 是一种，let 和 const 是另一种。
 var 定义的变量以函数为界，let 和 const 定义的变量以 block 为界。

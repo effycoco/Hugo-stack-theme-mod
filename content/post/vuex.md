@@ -14,7 +14,7 @@ tags:
   - 学习笔记
 ---
 
-# 关于
+# Intro
 
 材料：
 
@@ -23,7 +23,7 @@ tags:
 
 用法：先看视频标题，在官网中找到对应部分，读，读完或读到看不懂的部分后看视频。一个视频看完后再看下一个视频标题，读下一部分的对应文档……；这次没有一比一机械复刻视频里的代码，看懂了他这样设计是为了用到什么知识点后，我可以自己用不完全一致的方式写代码以用到这个知识点。
 
-# 小结
+# Summary
 
 商店是全局可用，任何一个组件内都可访问。
 
@@ -64,6 +64,8 @@ const app = createApp({
 // 将 store 实例作为插件安装
 app.use(store);
 ```
+
+use router 和 use store 的顺序？目前看到的都是 use router 在前。
 
 ## 使用 mutation 改变 state
 
@@ -301,7 +303,9 @@ const store = createStore({
 });
 ```
 
-在各模块内部，传递给 mutations 和 getters 的第一个参数`state`是 local state。传递给 actions 的第一个参数是`context`，`context.state`是 local state，`context.rootState`是 root state。传递给 getters 的参数有三个`(state, getters, rootState)`。
+## 在模块内访问全局内容（ root 及其他模块的内容）
+
+在各模块内部，传递给 mutations 和 getters 的第一个参数`state`是 local state。传递给 actions 的第一个参数是`context`，`context.state`是 local state，`context.rootState`是 root state。传递给 getters 的参数有四个`(state, getters, rootState, rootGetters)`。如果传递的参数不是全部都会用到，则可将不用的参数以-代替，如 aGetter(\_, getters, \_2, rootGetters){}。
 
 总之，模块内的`state`是 local state。
 
@@ -311,7 +315,7 @@ const store = createStore({
 
 若在定义 module 时，使用了`namespaced: true` 则该模块具有独立的命名空间，该模块内的 getters, actions, mutations 名可以与其他模块或主 store 中定义的 getters, actions, mutations 名相同。
 
-对于 state，模块内的 state 始终是独立的，不管是默认还是添加了`namespaced: true`。访问模块内的 state 要用`this.$store.state.<模块名>.<state名>`
+对于 state，模块内的 state 始终是独立的，无论是否添加了`namespaced: true`。访问模块内的 state 要用`this.$store.state.<模块名>.<state名>`
 
 在组件中访问 namespaced 模块时，要加上路径，比如原来的`this.$store.getters.counter` 换成`this.$store.getters['numbers/counter']` , `numbers`是指创建 store 时分配给该 namespaces module 的 key name , 而不是定义模块时用的变量名
 
@@ -339,7 +343,8 @@ const store = createStore({
 
 - mutation: `this.$store.commit('<mutation名>')` 替换为 `this.$store.commit('<模块名>/<mutation名>')` (mutation 名即 mutation type)
 - mapMutations: `...mapMutations(['<mutation名>'])` 换成`...mapMutations(<模块名>,['<mutation名'])`
-- 其他两个同理
+- actions 同理
+- getters: 将 this.$store.getters.name 替换为 this.$store.getters['模块名/getter 名']
 
 # Application Structure
 
