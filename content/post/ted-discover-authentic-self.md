@@ -1,6 +1,6 @@
 ---
 title: "How to Discover Your Authentic Self"
-description: 观看笔记，学习一些表达，感觉自己像婴儿咿呀学语
+description: 观看笔记，学习一些表达
 date: 2022-06-17T22:33:41+08:00
 image:
 math:

@@ -337,7 +337,7 @@ const store = createStore({
 
 ## 改用模块后的变动
 
-如果一开始未用模块，整个 app 写完后要把一部分逻辑提取出来放到一个模块里，在组件文件中，用 getters, mutations, actions 的地方无需改变；用到被提出的 state 之处，要将`this.$store.state.<state名>`替换为`this.$store.state.<模块名>.<state名>`。
+如果一开始未用模块，整个 app 写完后要把一部分逻辑提取出来放到一个模块里，，未添加独立命名空间时，在模块内部无需改变（剪切粘贴后的代码）；在组件文件中，用 getters, mutations, actions 的地方无需改变；用到被提出的 state 之处，要将`this.$store.state.<state名>`替换为`this.$store.state.<模块名>.<state名>`。
 
 如果在定义模块时添加了`namespaced: true`，则用 getters, mutations, actions 的地方也需改变：
 
