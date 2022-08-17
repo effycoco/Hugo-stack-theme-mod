@@ -57,16 +57,17 @@ tags:
 
    # 部署到 https://<USERNAME>.github.io/<REPO>
 
-   git push -f git@github.com:effycoco/find-a-coach.git master:gh-pages
+   git push -f git@github.com:effycoco/<repo-name>.git master:gh-pages
 
    # master:pages代表将本地master分支push至远程gh-pages分支
+   # 此时在dist文件夹中，将dist文件夹的master分支推送至远程gh-pages分支
 
    # 返回上一级文件夹
    cd -
 
    ```
 
-   参考[官方文档](https://cli.vuejs.org/guide/deployment.html#github-pages)
+   参考了[官方文档](https://cli.vuejs.org/guide/deployment.html#github-pages)
 
    sh 文件中的内容就是运行 `build` 将手写代码转换成浏览器能理解的代码，转换后的代码放在生成的 `dist `文件夹中，`cd` 到该文件夹，将该文件夹内容上传至远程库的` gh-pages` 分支。
 
