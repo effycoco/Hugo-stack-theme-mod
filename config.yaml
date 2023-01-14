@@ -1,8 +1,8 @@
-baseurl: https://record-everything.vercel.app
+baseurl: https://unfolding.vercel.app
 languageCode: en-us, cn-zh
 theme: stack
 paginate: 5
-title: Record Everything
+title: Unfolding Life
 
 # Change it to your Disqus shortname before using
 disqusShortname: Effy
@@ -39,7 +39,7 @@ params:
 
   sidebar:
     emoji:
-    subtitle: Done is better than perfect.
+    subtitle: You have to wait and see how your life unfolds.
     avatar:
       enabled: true
       local: true
