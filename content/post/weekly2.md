@@ -67,14 +67,18 @@ draft: false
 《美丽的世界，你在哪里》说实话，我看它就是知道一定可以不费力地看完，如此而已。
 
 > Who is now alone, will long remain so,
+>
 > will wake, read, write long letters
+>
 > and wander restlessly here and there
+>
 > along the avenues, as the leaves are drifting.
 >
-> 谁此时孤独，就永远孤独
-> 就醒来，读书，写长长的信
-> 在林荫路上不停地
+> 谁此时孤独，就永远孤独  
+> 就醒来，读书，写长长的信  
+> 在林荫路上不停地  
 > 徘徊，落叶纷飞。
+>
 > —— 里尔克（Rilke）
 
 第一次看这首诗还是在《致青春》小说里。
@@ -113,4 +117,5 @@ inoreader 无法记住阅读位置略有不便，但还好，影响不大。
 
 # 结
 
+这周更新完系统后屏幕使用时间空白了，这很难不怀疑其他数据丢失啊。
 没想到我连续写三周周记了，虽然毫无营养，对我自己还是有用的。
