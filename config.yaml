@@ -195,7 +195,7 @@ menu:
 
     - identifier: mastodon
       name: effy
-      url: https://o3o.ca/web/@effy1209
+      url:
       params:
         icon: brand-mastodon
 

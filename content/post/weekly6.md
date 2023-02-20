@@ -53,7 +53,7 @@ draft: false
 
 放一下 3x3 截图：
 
-![16日时间线](https://raw.githubusercontent.com/effycoco/images/main/img/IMG_7897.jpg) ![17日时间线](https://raw.githubusercontent.com/effycoco/images/main/img/IMG_7898.jpg)
+<img src="https://raw.githubusercontent.com/effycoco/images/main/img/IMG_7897.jpg" alt="16日时间线" max-width="100%" width="350"  style="display:inline-block" /><img src="https://raw.githubusercontent.com/effycoco/images/main/img/IMG_7898.jpg" alt="18日时间线" max-width="100%" width=350 style="display:inline-block" />
 
 # 吃
 
@@ -107,18 +107,30 @@ draft: false
 
 这本看的中文版，从图书馆借的，21 年借的！稀稀拉拉看了一点点又闲置了很久（多亏疫情一直给我续期），因为看完了 hf java 又重新把它打开，这次终于有看进去的感觉了。这本书夹的卡片非常实用，思维导图式的目录，标注了新手必读章节，还建议根据兴趣和需要挑着读。因为我这段时间的重点是完成 61b，也就是数据结构和算法相关，这本书可能只在睡前看。
 
-# 其他
+# 其他 - 歌单·丰富工具箱·手账系统
 
 本周循环了 N 遍的歌单是 Februray: Year of Wonder，在苹果音乐和网易云能搜到。它来自书籍《奇遇之年》。
 
-在象友安利下发现了几个实用插件：
+在象友安利下发现了几个实用的浏览器插件：
 
-- oneTab 不需要设置什么，点一下就把所有 tab 收在一个页面里，解决了 tab 太多每次攒够了要一个个去考虑能不能关掉的烦恼
-- clearly 我大学时就被安利过，但没觉得有用就禁用了。最近再次被安利才又试了试，发现看一些没有目录的长文很方便，会自动生成目录栏。缺点是无法同时用其他插件，无所谓，我会开两个一样的 tab。
-- buring vocalbulary 还没怎么探索。但它也许可以实现我想用 anki 做但因为麻烦没坚持的事——把平时阅读看视频遇到的每个生词都收集起来。
+- oneTab 不需要设置什么，点一下就把所有 tab 收在一个页面里，解决了 tab 太多每次攒够了要一个个去考虑能不能关掉的烦恼。还能把标签按任务分组。
+- clearly 大学时就被安利过，但没觉得有用就禁用了。最近再次被安利才又试了试，发现看一些没有目录的长文很方便，会自动生成目录栏。标记功能比 hypothesis 更方便些（后者优势是备份到 ob,但我不太需要，有备份但没看过），下次打开标记会保留。缺点是无法同时用其他插件，无所谓，我会开两个一样的 tab。免费功能足够好用。
+- buring vocalbulary 还没怎么探索。但它也许可以实现我用 anki 做过但因为麻烦没坚持的事——把平时阅读看视频遇到的每个生词都收集起来，并且只记遇到的 context 中单词的特定意思，其他意思都不管。做到只记需要会员才有的单词备注功能，暂时还没开。感觉如果不开，定期把单词转移到 anki 里也可以，不过这就需要额外的工作，我不一定会做。另一个实用功能是翻译段落。相比一下子翻译一页的沉浸式翻译，这个适用于读着原文遇到某个地方不理解只翻译那一段。
+
+还体验了长毛象客户端 mona，是我试过最好的，详细优缺点见这条嘟（这是我的账号）：
+
+<iframe src="https://mastodon.im/@arraydeque/109869501506536663/embed" class="mastodon-embed" style="max-width: 100%; border: 0;margin:0 auto;display:block" width="700" allowfullscreen="allowfullscreen"></iframe><script src="https://mastodon.im/embed.js" async="async"></script>
+
+还写了一下目前在用的手账系统，其实就是几种记录方式如何配合和侧重啦：
+
+<iframe src="https://mastodon.im/@arraydeque/109871728905401362/embed" class="mastodon-embed" style="max-width: 100%; border: 0;margin:0 auto;display:block" width="700" allowfullscreen="allowfullscreen"></iframe><script src="https://mastodon.im/embed.js" async="async"></script>
+
+本周印象深刻的播客单集——《剧谈｜人生困局指南：苏东坡和他的精神胜利法》，这里放一下该集最后主持人的结语：
+
+<iframe src="https://mastodon.im/@arraydeque/109880861260394079/embed" class="mastodon-embed" style="max-width: 100%; border: 0;margin:0 auto;display:block" width="700" allowfullscreen="allowfullscreen"></iframe><script src="https://mastodon.im/embed.js" async="async"></script>
 
 # The End
 
-这周就当复健吧。不过这次摆烂不是自厌自弃，而是因为知道总有一天能恢复反而摆得心安理得的感觉。但我一直在推迟恢复的时间，总是在重复挣脱一点点又打回原形的过程，还是像在泥沼中挣扎，走两步退一步，只不过这次还有些享受不急于走出。
+这周就当复健吧。不过这次摆烂不是自厌自弃，而是因为知道总有一天能恢复反而摆得心安理得的感觉。但我一直在推迟恢复的时间，总是在重复挣脱一点点又打回原形的过程，还是像在泥沼中挣扎，走两步退一步，只不过这次还有些享受泥沼不急于走出。
 
 本周的周记也是复健中，不想多说什么了，对自己的要求仍是：只要不是最后一篇就好。
