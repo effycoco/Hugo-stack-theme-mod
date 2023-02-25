@@ -1,6 +1,6 @@
 ---
 title: "6th｜2.12-2.18 复健中"
-description:
+description: 重新做人ing
 date: 2023-02-18T23:05:19+08:00
 image:
 categories: weekly
