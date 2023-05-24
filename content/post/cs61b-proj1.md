@@ -6,6 +6,9 @@ image:
 categories:
 slug: cs61b-proj1
 tags:
+  - CS
+  - Java
+
 math:
 license:
 hidden: false
