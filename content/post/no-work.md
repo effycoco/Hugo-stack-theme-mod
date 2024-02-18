@@ -10,7 +10,7 @@ image:
 
 categories:
 
-slug:
+slug: no-work
 
 tags:
 
