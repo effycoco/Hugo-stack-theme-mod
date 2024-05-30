@@ -18,7 +18,7 @@ math:
 
 license:
 
-hidden: false
+hidden: true
 
 comments: true
 
