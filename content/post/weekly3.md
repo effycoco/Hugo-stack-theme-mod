@@ -9,7 +9,7 @@ math:
 license:
 hidden: false
 comments: true
-draft: false
+draft: true
 ---
 
 这周虽然前三天都没学习，其实也在兴奋期，理由是醒得早，哪怕连续好几晚睡眠时间都很短。也没有回笼觉，我知道自己不会再睡着也就不尝试了，回笼觉也不利于夜间睡眠。

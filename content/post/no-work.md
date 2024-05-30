@@ -2,7 +2,7 @@
 
 title: "辞否"
 
-description:
+description: 其实没什么好怕的，这年头，想饿死也有点难度……
 
 date: 2024-02-18T21:50:58+08:00
 
@@ -10,7 +10,7 @@ image:
 
 categories:
 
-slug: no-work
+slug: quit-or-not
 
 tags:
 
@@ -22,7 +22,7 @@ hidden: false
 
 comments: true
 
-draft: false
+draft: true
 
 ---  
 

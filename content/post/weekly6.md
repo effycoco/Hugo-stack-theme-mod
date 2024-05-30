@@ -10,7 +10,7 @@ math:
 license:
 hidden: false
 comments: true
-draft: false
+draft: true
 ---
 
 上周是真的毫不夸张地废了一周，坚持了一个多月的每日记录和周记也都中断了，按时关屏幕也没做。这周希望自己重新做人！

@@ -9,7 +9,7 @@ categories: weekly
 slug: weekly1
 hidden: false
 comments: true
-draft: false
+draft: true
 ---
 
 # 碎碎念

@@ -10,7 +10,7 @@ math:
 license:
 hidden: false
 comments: true
-draft: false
+draft: true
 ---
 
 写完发现看着干了很多，但优先级最高的 61b 学的不太多。不到 8 小时的样子。

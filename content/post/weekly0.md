@@ -5,9 +5,9 @@ date: 2022-12-31T20:21:13+08:00
 image:
 math:
 license:
-hidden: false
+hidden: true
 comments: true
-draft: false
+draft: true
 slug: weekly0
 categories:
   - weekly

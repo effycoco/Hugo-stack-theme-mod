@@ -10,7 +10,7 @@ math:
 license:
 hidden: false
 comments: true
-draft: false
+draft: true
 ---
 
 上周日：希望这周能实践一下有效休息，不是穿插玩手机的那种。
